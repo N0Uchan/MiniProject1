@@ -1,0 +1,29 @@
+.btn{
+    transition: 0.55s ease-in-out;
+}
+.btn:hover { /* Change background color on hover */
+    transform: scale(1.1); /* Scale the button up on hover (pop up effect) */
+    cursor: pointer;
+}
+.img-fluid {
+    transition: transform 0.5s, box-shadow 0.5s; /* Add transitions for both transform and box-shadow */
+    box-shadow: none; /* Remove the shadow initially */
+}
+
+.img-fluid:hover {
+    transform: translateY(-100px); /* Move the image 10 pixels up on hover, adjust as needed */
+}
+
+#bgVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    filter: blur(10px); /* Add a blur effect, adjust the value to control the blur intensity */
+    opacity: 0.9; /* Adjust the opacity value (0.0 to 1.0) to control transparency */
+    transition: filter 1.5s, opacity 1.5s; /* Add transitions for a smooth effect */
+}

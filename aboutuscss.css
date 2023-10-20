@@ -1,0 +1,58 @@
+.amor3x {
+    border-radius: 50%;
+    transition: 0.35s ease-in-out;
+}
+
+.amor3x:hover {
+    transform: scale(1.05);
+    border-radius: 3.5%;
+}
+.asad{
+    border-radius: 50%;
+    transition: 0.35s ease-in-out;
+}
+
+.asad:hover {
+    transform: scale(1.05);
+    
+}
+
+.points {
+    transition: 0.25s ease-in-out;
+    opacity: 1;
+    font-size: 13px;
+    cursor: default;
+}
+
+.points:hover{
+    transform: scale(1.05);
+    font-size: 19px;
+    cursor: default;
+}
+.lead{
+    transition: 0.25s ease-in-out;
+}
+.lead:hover{
+    transform: scale(1.05);
+    font-size: 29px;
+}
+.featurette-heading {
+    transition: 0.25s ease-in-out;
+}
+  
+.featurette-heading:hover {
+    transform: scale(1.05);
+}
+#bgVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    filter: blur(10px); /* Add a blur effect, adjust the value to control the blur intensity */
+    opacity: 0.9; /* Adjust the opacity value (0.0 to 1.0) to control transparency */
+    transition: filter 1.5s, opacity 1.5s; /* Add transitions for a smooth effect */
+}
