@@ -1,20 +1,61 @@
 .amor3x {
-    border-radius: 50%;
-    transition: 0.35s ease-in-out;
+    transition: transform 0.35s ease-in-out;
 }
 
 .amor3x:hover {
-    transform: scale(1.05);
+    animation: spin 1.2s forwards, shadow 2s forwards 2s; /* Start the spin animation on hover and add a delay for the shadow */
     border-radius: 3.5%;
 }
-.asad{
+
+.amor3x:not(:hover) {
+    animation: unspin 1.2s forwards, shadow-off 2.7s forwards; /* Start the unspin animation on unhover and add a shadow-off animation */
+    border-radius: 3.5%;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+        box-shadow: none; /* Initially, there is no box shadow */
+    }
+    100% {
+        transform: rotateY(180deg) scale(1.065) ;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        
+         /* Add the box shadow at the end of the spin animation */
+    }
+}
+
+@keyframes unspin {
+    0% {
+        transform: rotateY(180deg) scale(1.05);;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); 
+        /* Initially, there is a box shadow */
+    }
+    100% {
+        transform: rotateY(0deg);
+        box-shadow: none; /* Remove the box shadow at the end of the unspin animation */
+    }
+}
+
+@keyframes shadow-off {
+    0% {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Initially, there is a box shadow */
+    }
+    100% {
+        box-shadow: none; /* Remove the box shadow at the end of the shadow-off animation */
+    }
+}
+
+
+.asad {
     border-radius: 50%;
     transition: 0.35s ease-in-out;
 }
 
 .asad:hover {
     transform: scale(1.05);
-    
+    border-radius: 3.5%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .points {
