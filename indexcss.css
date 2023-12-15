@@ -27,3 +27,53 @@
     opacity: 0.9; /* Adjust the opacity value (0.0 to 1.0) to control transparency */
     transition: filter 1.5s, opacity 1.5s; /* Add transitions for a smooth effect */
 }
+
+.fotter {
+    display: flex;
+    justify-content: center;
+    gap:179px;
+}
+
+.card {
+    width:173px;
+    height:120px;
+    margin: 10px;
+    text-align: center;
+    background: rgba(255,255,255,0);
+    transition: transform 0.5s, box-shadow 0.5s;
+    box-shadow: none; 
+    position:relative;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.15); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.229);
+    
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.card button {
+    position: absolute;
+    margin-left: 0px;
+    margin-right:0px;
+    border:none;
+    height: 27px;
+    width: 173px;
+    bottom: 0px; 
+    border-radius:0px 0px 8px 8px;
+    left: 50%;
+    transform: translateX(-50%); 
+    opacity: 0;
+    transition: opacity 0.5s; 
+    backdrop-filter: blur(5px);
+}
+.card:hover button{
+    opacity:1;
+}
+.card:active{
+    transform: scale(1.19);
+}

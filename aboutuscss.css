@@ -1,56 +1,3 @@
-.amor3x {
-    border-radius: 50%;
-    filter:saturate(0%);
-    transition: 0.35s ease-in-out;
-}
-
-.amor3x:hover {
-    transform: scale(1.05);
-    border-radius: 3.5%;
-    filter:saturate(100%);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.asad {
-    border-radius: 50%;
-    filter:saturate(0%);
-    transition: 0.35s ease-in-out;
-}
-
-.asad:hover {
-    transform: scale(1.05);
-    border-radius: 3.5%;
-    filter:saturate(100%);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-
-.points {
-    transition: 0.25s ease-in-out;
-    opacity: 1;
-    font-size: 13px;
-    cursor: default;
-}
-
-.points:hover{
-    transform: scale(1.05);
-    font-size: 19px;
-    cursor: default;
-}
-.lead{
-    transition: 0.25s ease-in-out;
-}
-.lead:hover{
-    transform: scale(1.05);
-    font-size: 29px;
-}
-.featurette-heading {
-    transition: 0.25s ease-in-out;
-}
-  
-.featurette-heading:hover {
-    transform: scale(1.05);
-}
 #bgVideo {
     position: fixed;
     right: 0;
@@ -63,4 +10,106 @@
     filter: blur(10px); /* Add a blur effect, adjust the value to control the blur intensity */
     opacity: 0.9; /* Adjust the opacity value (0.0 to 1.0) to control transparency */
     transition: filter 1.5s, opacity 1.5s; /* Add transitions for a smooth effect */
+}
+
+.container{
+    display:flex;
+    gap:150px;
+    justify-content: center;
+    align-items:center;
+    height: 80vh;
+    margin-bottom: none;
+}
+
+.amorex, .asad {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#amorexpfp{
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+    transition:0.35s ease-in-out;
+}
+
+#asadpfp{
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+    transition:0.35s ease-in-out;
+}
+
+#amorexpfp:hover{
+    transform: scale(1.05);
+    border-radius: 3.5%;
+    filter:saturate(100%);
+    backdrop-filter: 4px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+#asadpfp:hover{
+    transform: scale(1.05);
+    border-radius: 3.5%;
+    filter:saturate(100%);
+    backdrop-filter: 4px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.texts{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:438px;
+}
+.tnihal{
+    opacity:0;
+    transform:translateY(0);
+    transition: 0.35s ease-in-out;
+}
+.tasad{
+    padding-right:5px;
+    opacity:0;
+    transform:translateY(0);
+    transition: 0.35s ease-in-out;
+}
+.visible{
+    transform:translateY(-20px) scale(1.2);
+    opacity:1;
+}
+
+.cards{
+    display:flex;
+    justify-content: center;
+    gap:165px;
+}
+.amorecardcontent{
+    transition:0.35s ease-in-out;
+    opacity:0;
+    
+    padding:48px;
+    padding-top:2px;
+    padding-bottom:2px;
+    align-items: center;    
+}
+.asadcard{
+    padding-left:69px;
+}
+.asadcardcontent{
+    
+    opacity:0;
+    transition:0.35s ease-in-out;
+    align-items: center;
+    padding:48px;
+    padding-top:2px;
+    padding-bottom:2px;
+    
+}
+.visiblecard{
+    transform:translateY(-20px) scale(1.2);
+    opacity:1;
+    border: solid 1px rgba(0, 0, 0, 0.119);
+    box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.202);
+    backdrop-filter: 4px;
+    border-radius: 9px;
 }
